@@ -1,0 +1,55 @@
+@startuml concept-taxonomy
+title Concept Taxonomy
+skinparam groupInheritance 2
+class Space 
+class "Continuous Space" as ContinuousSpace
+class "Discrete Space" as DiscreteSpace
+
+Space <-- DiscreteSpace #line:orange : isA
+Space <-- ContinuousSpace #line:orange : isA
+
+class Time
+class "Continuous Time" as ContinuousTime
+class "Discrete Time" as DiscreteTime
+
+Time <-- ContinuousTime #line:orange : isA
+Time <-- DiscreteTime #line:orange : isA
+
+class Object
+class Entity
+class "Player" as Player
+class "Non Playable Character" as Npc
+
+Object <-- Entity #line:orange : isA
+Entity <-- Player #line:orange : isA
+Entity <-- Npc #line:orange : isA
+
+'Class Event
+
+'Class Mechanic
+'Class "Rules" as Rule
+
+Class Action
+Class "Basic Action" as BasicAction
+class "Strategic Action" as StrategicAction
+
+Action <-- BasicAction #line:blue : isA
+Action <-- StrategicAction #line:blue : isA
+
+Class State
+Class "Dynamic State" as DynamicState
+Class "Static State" as StaticState
+
+State <-- DynamicState #line:orange : isA
+State <-- StaticState #line:orange : isA
+
+
+hide members
+
+legend right
+    |<#purple>| Disjoint-Decomposition|
+    |<#blue>| Exhaustive-Decomposition|
+    |<#orange>| Partition |
+endlegend
+
+@enduml

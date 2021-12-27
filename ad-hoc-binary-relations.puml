@@ -1,0 +1,46 @@
+@startuml ad-hoc-binary-relations
+title Ad Hoc Binary Relations
+class Event
+class Rule
+class Mechanic
+class Space
+class Time
+class Action
+class Object 
+
+Event --> Rule: allowedByRule
+Event <-- Rule: allowsEvent
+
+Rule --> Mechanic: isDefinedByMechanic 
+Rule <-- Mechanic: DefinesRules
+
+Mechanic --> Space: DefineSpace
+Mechanic <-- Space: isDefinedByMechanic
+
+Mechanic --> Time: DefineTime
+Mechanic <-- Time: isDefinedByMechanic
+
+Action --> Event: causesEvent
+Action <-- Event: causedByAction
+
+Event --> State: changesState
+Event <-- State: isChangedByEvent
+
+Event --> Time: happensAtATime
+Event <-- Time: hasEvent
+
+Space --> Object: hasObject
+Space <-- Object: isInSpace
+
+Action --> Rule: allowedByRule
+Action <-- Rule: allowsActions
+
+State --> Action: canCauseAction
+State <-- Action: isCausedByState
+
+Object --> State: hasState
+Object <-- State: definesBehaviour
+
+hide members
+hide circles
+@enduml

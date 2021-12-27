@@ -1,0 +1,565 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#"
+     xml:base="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#canCause -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#canCause">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Entity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#canChange -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#canChange">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#canCreate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#canCreate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#canTrigger -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#canTrigger">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#contains">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Space"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Boundary"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#defines -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#defines">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Mechanic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Space"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Time"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#existsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#existsIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Object"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Space"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#givesInputTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#givesInputTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#PlayerCharacter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#happensAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#happensAt">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Time"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#has">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Object"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#isHostileTorwards -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#isHostileTorwards">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Entity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#intensity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#intensity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Action"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#ArcherGoblin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#ArcherGoblin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Goblin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#BlueSlime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#BlueSlime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Slime"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Boundary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Boundary"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#ContinuousSpace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#ContinuousSpace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Space"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#DiscreteSpace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#ContinuousTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#ContinuousTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Time"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#DiscreteTime"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#DiscreteSpace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#DiscreteSpace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Space"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#DiscreteTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#DiscreteTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Enemy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Enemy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#NonPlayableCharacter"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#isHostileTorwards"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#NonPlayableCharacter"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#NonPlayableCharacter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Entity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Goblin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Goblin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#NonPlayableCharacter"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Slime"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#GoblinInvasion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#GoblinInvasion">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#canCreate"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Goblin"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#KingSlime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#KingSlime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Slime"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Mechanic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Mechanic"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#NonPlayableCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#NonPlayableCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Entity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#PlayerCharacter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Object"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#PeonGoblin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#PeonGoblin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Goblin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Player"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#PlayerCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#PlayerCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Slime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Slime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#NonPlayableCharacter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#SlimeRain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#SlimeRain">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#canCreate"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Slime"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#SorcererGoblin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#SorcererGoblin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Goblin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Space -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Space"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#State -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#State"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#ThiefGoblin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#ThiefGoblin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Goblin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Time"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#WarriorGoblin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#WarriorGoblin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Goblin"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#ArcherGoblin1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#ArcherGoblin1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#ArcherGoblin"/>
+        <isHostileTorwards rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Kuro"/>
+        <intensity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</intensity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#BlueSlime1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#BlueSlime1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#BlueSlime"/>
+        <isHostileTorwards rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Kuro"/>
+        <intensity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</intensity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#BlueSlime2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#BlueSlime2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#BlueSlime"/>
+        <isHostileTorwards rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Kuro"/>
+        <intensity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</intensity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#BlueSlime3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#BlueSlime3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#BlueSlime"/>
+        <isHostileTorwards rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Kuro"/>
+        <intensity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</intensity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Daniel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Daniel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Player"/>
+        <givesInputTo rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Kuro"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#FirstGoblinInvasion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#FirstGoblinInvasion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#GoblinInvasion"/>
+        <canCreate rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#ArcherGoblin1"/>
+        <canCreate rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#PeonGoblin1"/>
+        <canCreate rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#PeonGoblin2"/>
+        <canCreate rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#PeonGoblin3"/>
+        <canCreate rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#SorcererGoblin1"/>
+        <canCreate rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#ThiefGoblin1"/>
+        <canCreate rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#WarriorGoblin1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#FirstKingSlime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#FirstKingSlime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#KingSlime"/>
+        <isHostileTorwards rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Kuro"/>
+        <intensity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</intensity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#FirstSlimeRain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#FirstSlimeRain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#SlimeRain"/>
+        <canCreate rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#BlueSlime1"/>
+        <canCreate rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#BlueSlime2"/>
+        <canCreate rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#BlueSlime3"/>
+        <canCreate rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#FirstKingSlime"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Kuro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Kuro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#PlayerCharacter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#PeonGoblin1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#PeonGoblin1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#PeonGoblin"/>
+        <isHostileTorwards rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Kuro"/>
+        <intensity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</intensity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#PeonGoblin2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#PeonGoblin2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#PeonGoblin"/>
+        <isHostileTorwards rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Kuro"/>
+        <intensity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</intensity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#PeonGoblin3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#PeonGoblin3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#PeonGoblin"/>
+        <isHostileTorwards rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Kuro"/>
+        <intensity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</intensity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#SorcererGoblin1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#SorcererGoblin1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#SorcererGoblin"/>
+        <isHostileTorwards rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Kuro"/>
+        <intensity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</intensity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#ThiefGoblin1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#ThiefGoblin1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#ThiefGoblin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#WarriorGoblin1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#WarriorGoblin1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#WarriorGoblin"/>
+        <isHostileTorwards rdf:resource="http://www.semanticweb.org/kurodriel/ontologies/2021/11/untitled-ontology-13#Kuro"/>
+        <intensity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</intensity>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
